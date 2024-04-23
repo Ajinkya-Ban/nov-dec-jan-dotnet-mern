@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper
+{
+    width: 80%;
+    min-height: 100vh;
+    /* border: 4px solid #000; */
+    margin: auto;
+}
+.main-header-div
+{
+    width: 100%;
+    height: 60px;
+
+}
+.main-header-div .logo{
+
+width: 30%;
+height: 60px;
+background-color: black;
+float: left;
+/* margin-right: 10px;
+margin-left: 15px; */
+
+}
+.logo h1{
+    color: white;
+    padding: 10px;
+}
+
+
+.main-header-div .menu{
+
+width: 50%;
+height: 60px;
+background-color: black;
+float: left;
+/* margin-right: 10px; */
+padding: 15px;
+}
+
+.menu a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.menu a:hover{
+    background-color: orange;
+    color: white;
+}
+.main-header-div .follow{
+
+width: 18%;
+height: 60px;
+background-color: black;
+float: left;
+padding-top: 10px;
+}
+.main-header-div .menu:nth-child(2)
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main-header-div .logo:nth-child(1)
+{
+    /* margin-left: 15px; */
+}
+.follow i{
+
+    color: white;
+    font-size: 1.5em;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.follow i:hover{
+    color: royalblue;
+    
+}
+.slider
+{
+    width: 100%;
+    height: 600px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.slider img{
+
+    width: 100%;
+    height: 100%;
+}
+.main-prod-div
+{
+    width: 100%;
+    min-height: 500px;
+   
+}
+.main-prod-div .box
+{
+    width: 32%;
+    min-height: 400px;
+   
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 10px;
+}
+.main-prod-div .box:nth-child(2)
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main-prod-div .box:nth-child(1)
+{
+    margin-left: 10px;
+    
+}
+.box img
+{
+    width: 100%;
+    height: 100%;
+}
+.footer
+{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+.footer h3{
+
+    color: white;
+    text-align: center;
+    line-height: 60px;
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper
+{
+    width: 60%;
+    min-height: 100px;
+    margin: auto;
+    /* border: 1px solid #000; */
+}
+.main-header-div
+{
+    width: 100%;
+    height: 60px;
+}
+.main-header-div .logo
+{
+    width: 45%;
+    height: 60px;
+    background-image: linear-gradient(30deg,#0F2027,#203A43,#2C5364);
+    float: left;
+}
+.logo h2{
+    color: white;
+    padding: 15px;
+}
+.main-header-div .menu
+{
+    width: 52%;
+    height: 60px;
+    background-image: linear-gradient(30deg,#0F2027,#203A43,#2C5364);
+    float: right;
+    padding-top: 20px;
+}
+.menu a
+{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+
+}
+.slider
+{
+    width: 100%;
+    /* height: 500px;  */
+    /* border: 1px solid #000; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.slider img
+{
+    width: 100%;
+    height: 100%;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box
+{
+    width: 100%;
+    height: 600px;
+}
+.cards
+{
+    width: 32%;
+    min-height: 520px;
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    float: left;
+    margin-left: 10px;
+}
+.imgs
+{
+    width: 100%;
+    height: 250px;
+    background-image:linear-gradient(30deg,#0F2027,#203A43,#2C5364);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.imgs img{
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 60px;
+    object-fit: cover;
+}
+.cards h2{
+
+    padding-top: 10px;
+    text-align: center;
+    font-family: "Sedan", serif;
+
+}
+.cards p{
+
+    padding: 10px;
+    font-family: "Sedan", serif;
+    text-align: justify;
+}
+.know_more
+{
+    margin-left: 80px;
+    width: 100px;
+    height: 30px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-family: "Sedan", serif;
+}
+.know_more:hover{
+    background-color: green;
+    color: white;
+}
+.social
+{
+    width: 100%;
+    height: 50px;
+    background-color: cadetblue;
+    margin-top: 33px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.social i{
+
+    margin-left: 30px;
+    padding: 3px;
+    margin-top: 10px;
+    font-size: 1.6em;
+    color: white;
+
+}
+.social i:hover
+{
+    background-color: black;
+    color: white;
+}
+.footer
+{
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(30deg,#0F2027,#203A43,#2C5364);
+    margin-top: 10px;
+
+}
+.footer h4{
+
+    text-align: center;
+    line-height: 60px;
+    color: white;
+}
