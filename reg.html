@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reg.css">
+
 </head>
 <body>
     
+    <div class="box">
+        
+        <div class="header-text">
+            <h1>Registration Form</h1>
+        </div>
+
+        <div class="form-fields">
+            <label for="fname">Enter FullName</label>
+            <input type="text" id="fname" placeholder="Enter fullname here" >
+
+
+            <label for="email">Enter Email Address</label>
+            <input type="email" id="email" placeholder="Enter email here" >
+
+            <label for="mob" class="test">Mobile Number</label>
+            <input type="number" id="mob" placeholder="Enter mobile" >
+
+            <label for="birth" class="test">Birthdate</label>
+            <input type="date" id="birth" value="2000-01-01">
+
+            <label for="country" class="test1">Select Country</label>
+           <select>
+            <option hidden value="Select">Select</option>
+            <option value="India">India</option>
+            <option value="usa">USA</option>
+            <option value="UK">UK</option>
+           </select>
+
+           <label for="state" class="test2">State</label>
+           <select class="state">
+            <option hidden value="Select">Select</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="UP">UP</option>
+            <option value="MP">MP</option>
+           </select>
+
+           <input type="submit" value="Register">
+
+        </div>
+
+    </div>
+
 </body>
 </html>
