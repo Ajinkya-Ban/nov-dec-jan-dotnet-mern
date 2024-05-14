@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 450px;
+            min-height: 100px;
+            border: 1px solid #000;
+        }
+        pre
+        {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <pre>
+            #include &lt;stdio.h&gt;
+                int main() {
+                
+                  int i, n;
+                
+                  // initialize first and second terms
+                  int t1 = 0, t2 = 1;
+                
+                  // initialize the next term (3rd term)
+                  int nextTerm = t1 + t2;
+                
+                  // get no. of terms from user
+                  printf("Enter the number of terms: ");
+                  scanf("%d", &n);
+                
+                  // print the first two terms t1 and t2
+                  printf("Fibonacci Series: %d, %d, ", t1, t2);
+                
+                  // print 3rd to nth terms
+                  for (i = 3; i <= n; ++i) {
+                    printf("%d, ", nextTerm);
+                    t1 = t2;
+                    t2 = nextTerm;
+                    nextTerm = t1 + t2;
+                  }
+                
+                  return 0;
+                }
+                
+        </pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,tr,td{
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+        table{
+            width: 500px;
+            margin:160px auto;
+        }
+        td{
+            padding: 5px;
+            text-align: center;
+        }
+        th{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+       #heading
+       {
+            font-size: 1.4em;
+            font-weight: bold;
+            background-color: lightseagreen;
+            color: white;
+       }
+       .id_width
+       {
+        width: 50px;
+       }
+       tr:nth-child(even)
+       {
+        background-color: lightgray;
+       }
+       tr:nth-child(odd)
+       {
+        background-color: lightgreen;
+       }
+       tr:hover{
+
+        background-color: lightpink;
+        color: black;
+        transition: 0.8s linear;
+        /* transform: scale(1.5); */
+        transform: rotateY(360deg);
+       }
+    </style>
+</head>
+<body>
+    <table>
+        <tr id="heading">
+            <td colspan="4">Student Data</td>
+        </tr>
+        <tr>
+            <th>Stud_ID</th>
+            <th>Name</th>
+            <th>Marks</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td class="id_width">1</td>
+            <td>Atul Kumar</td>
+            <td>80</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td class="id_width">2</td>
+            <td>Ramesh Kumar</td>
+            <td>88</td>
+            <td>Nashik</td>
+        </tr>
+        <tr>
+            <td class="id_width">3</td>
+            <td>Rahul Kumar</td>
+            <td>70</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td class="id_width">4</td>
+            <td>Sanjay Kumar</td>
+            <td>95</td>
+            <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td class="id_width">5</td>
+            <td>Akshay Kumar</td>
+            <td>60</td>
+            <td>Sangali</td>
+        </tr>
+
+    </table>
+</body>
+</html>

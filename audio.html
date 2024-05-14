@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <audio controls loop autoplay muted>
+        <source src="audio/audio.mp3" type="audio/mp3">
+    </audio>
+    <a href="audio/audio.mp3" download="audio.mp3">Download this ringtone</a> -->
+
+    <audio src="audio/audio.mp3" loop="loop" id="my_audio" controls></audio>
+    <!-- use hidden attribute to hide audio -->
+    
+
+    <script type="text/javascript">
+        window.onload = function()
+        {
+            document.getElementById('my_audio').play();
+        }
+    </script>
+</body>
+</html>

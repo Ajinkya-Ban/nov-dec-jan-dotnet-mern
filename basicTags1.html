@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 80%;
+            min-height: 100px;
+            border: 1px solid #000;
+            margin: auto;
+        }
+        .box p{
+            padding: 10px;
+            text-align: justify;
+        }
+        .box p::first-letter
+        {
+            font-size: 1.9em;
+            color: red;
+            font-weight: bold;
+        }
+        mark
+        {
+            background-color: lightgreen;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+            Lorem, ipsum <abbr title="this is one of the most valuable currency in world."> dolor</abbr> sit amet consectetur adipisicing elit. Repellat iusto esse nihil corporis, facere veritatis. Repudiandae eius sint rerum optio, fugiat consequatur sequi suscipit placeat eos? Velit sint iure numquam quibusdam, vel temporibus possimus cumque at ducimus, vitae necessitatibus maiores suscipit atque odit voluptates incidunt tempora fuga aut accusamus facilis illum. Expedita minus laborum doloremque. Autem ex nam vero quibusdam fugiat. Non sapiente aperiam quisquam alias explicabo iste totam veniam ipsam vero fugit soluta ratione nulla odio iusto illum architecto asperiores error obcaecati, aut quia magnam earum.<mark> Est soluta laboriosam labore ut cumque, quod dolores earum nisi voluptatum dignissimos fugit.</mark>
+        </p>
+        <br />
+        <p>
+            <strong>Lorem, ipsum dolor sit amet</strong> consectetur adipisicing elit. Repellat iusto esse nihil corporis, facere veritatis. Repudiandae eius sint rerum optio, fugiat consequatur sequi suscipit placeat eos? Velit sint iure numquam quibusdam, vel temporibus possimus cumque at ducimus, vitae necessitatibus maiores suscipit atque odit voluptates incidunt tempora fuga aut accusamus facilis illum. Expedita minus laborum doloremque. Autem ex nam vero quibusdam fugiat. Non sapiente aperiam quisquam alias explicabo iste totam veniam ipsam vero fugit soluta ratione nulla odio iusto illum architecto asperiores error obcaecati, aut quia magnam earum.<del> Est soluta laboriosam labore ut cumque, quod dolores earum nisi voluptatum dignissimos fugit.</del>
+        </p>
+    </div>
+</body>
+</html>
