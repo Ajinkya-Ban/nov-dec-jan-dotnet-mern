@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *
         {
@@ -19,7 +19,6 @@
         {
             width: 100vw;
             height: 100vh;
-
             background-image: url(imgs/nature_hills.avif);
             background-repeat: no-repeat;
             background-position:center;
@@ -37,9 +36,9 @@
         {
             width: 49%;
             height: 70px;
-            /* float: right; */
-            right: 0;
-            position: absolute;
+            float: left;
+           position: absolute;
+           left: 0;
         }
         .logo h1{
             color: white;
@@ -49,9 +48,9 @@
 
             width: 49%;
             height: 70px;
-            /* float: left; */
+            float: right;
             position: absolute;
-            left: 0;
+            right: 0;
         }
         .menu ul
         {
@@ -74,6 +73,119 @@
         .menu ul li a:hover{
             background-color: lightseagreen;
         }
+        .main-box
+        {
+            width: 96%;
+            min-height: 190px;
+            margin: 130px 10px;
+        }
+        .main-box .b1
+        {
+            width: 55%;
+            min-height: 200px;
+            /* border: 1px solid #fff; */
+            float: left;
+        }
+        .main-box .b2
+        {
+            width: 35%;
+            min-height: 200px;
+            border: 10px solid #fff;
+            float: right;
+
+            border-top-right-radius: 25%;
+            border-top-left-radius: 25%;
+            border-top-color: green;
+            border-bottom: 0;
+        }
+        .b1 p
+        {
+            color: white;
+            font-size: 2.0em;
+            padding: 10px;
+            text-align: justify;
+        }
+        span
+        {
+            color: orange;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .b2
+        {
+            /* backdrop-filter: blur(30px);
+            opacity: 0.6; */
+        }
+        .b2 .header-text{
+            width: 100%;
+            height: 60px;
+
+        }
+        .header-text h1{
+            color: white;
+            text-align: center;
+        }
+        .form-fileds
+        {
+            width: 100%;
+            min-height: 200px; 
+        }
+        label{
+            width: 100%;
+            color: white;
+            margin: 10px 10px;
+        }
+        input[type=text]
+        {
+            width: 96%;
+            padding: 5px;
+            margin: 10px 10px;
+            background-image: url(imgs/user.png);
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position: left;
+            outline: 0;
+            border: 1px solid #fff;
+            border-radius: 10px;
+           color: black;
+            opacity: 0.5;
+        }
+        input[type=text]::placeholder
+        {
+           
+        }
+        input[type=password]
+        {
+            width: 96%;
+            padding: 6px;
+            margin: 10px 10px;
+            background-image: url(imgs/pass.png);
+            background-repeat: no-repeat;
+            padding-left: 30px;
+            background-position: left;
+            outline: 0;
+            border: none;
+            border-radius: 10px;
+            color: black;
+            opacity: 0.5;
+        }
+        input[type=submit]
+        {
+            width: 96%;
+            padding: 10px;
+            height: 50px;
+            margin: 20px 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            background-color: #204B5B;
+            color: white;
+            border-radius: 10px;
+        }
+        input[type=submit]:hover{
+            background-color: #06191F;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -92,6 +204,33 @@
                     <li><a href="">Job Openings</a></li>
                     <li><a href="">Contact Us</a></li>
                 </ul>
+            </div>
+        </div>
+
+
+        <div class="main-box">
+            <div class="b1">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span>Quisquam</span> 
+                    ad <span>consequatur</span> error, aut earum sint.Lorem ipsum, dolor sit amet consectetur.
+                </p>
+            </div>
+
+            <div class="b2">
+                <div class="header-text">
+                    <h1>Login</h1>
+                </div>
+
+                <div class="form-fileds">
+                    <form>
+                        <label for="uname">Enter Username</label>
+                        <input type="text" id="uname" placeholder="Enter username here">
+                        <label for="pass">Enter Password</label>
+                        <input type="password" id="pass" placeholder="Enter password here">
+
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
