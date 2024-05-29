@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 650px;
+            min-height: 100px;
+            border: 1px solid #000;
+            margin: auto;
+            display: flex;
+            /* flex-direction: row; */
+        }
+        .box .b1{
+            width: 300px;
+            height: 200px;
+            background-color: royalblue;
+            /* float: left; */
+        }
+        .box .b2{
+            width: 300px;
+            height: 200px;
+            background-color: orange;
+            /* float: right; */
+        }
+        .clearfix::after
+        {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+        <div class="b1">
+            Box1
+        </div>
+        <div class="b2">
+            Box2
+        </div>
+    </div>
+</body>
+</html>
