@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 80%;
+            min-height: 100px;
+            border: 1px solid lightgrey;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 60px 60px 300px 200px 300px 60px;
+            grid-gap: 5px;
+            grid-template-areas: "header header header"
+                                  "navbar navbar navbar"
+                                  "slider slider slider"
+                                  "box1 box2 sidebar"
+                                  "con con sidebar"
+                                  "footer footer footer";
+        }
+        .header{
+            background-color: royalblue;
+            color: white;
+            grid-area: header;
+        }
+        .menu
+        {
+            background-color: gray;
+            color: white;
+            grid-area: navbar;
+        }
+        .slider
+        {
+            background-color: lightseagreen;
+            color: white;
+            grid-area: slider;
+        }
+        .box1
+        {
+            background-color: orange;
+            color: white;
+            grid-area: box1;
+        }
+        .box2
+        {
+            background-color: green;
+            color: white;
+            grid-area: box2;
+        }
+        .sidebar
+        {
+            background-color: royalblue;
+            color: white;
+            grid-area: sidebar;
+        }
+        .contents
+        {
+            background-color: blueviolet;
+            color: white;
+            grid-area: con;
+        }
+        .footer
+        {
+            background-color: royalblue;
+            color: white;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Company Name</div>
+        <div class="menu">Menu</div>
+        <div class="slider">Slider</div>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="contents">Body Contents</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
