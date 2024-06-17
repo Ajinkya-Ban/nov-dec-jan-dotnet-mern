@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 550px;
+            min-height: 300px;
+            border: 1px solid #000;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .b1{
+            width: 290px;
+            min-height: 280px;
+           background-color: royalblue;
+           color: white;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        
+        }
+        .b1 p{
+            padding: 10px;
+            text-align: justify;
+        }
+        .b2{
+            width: 290px;
+            min-height: 280px;
+           background-color: crimson;
+           color: white;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .b2 p{
+            text-align: justify;
+            padding: 10px;
+        }
+
+        @media only screen and (max-width:768px) and (min-width:400px){
+             
+            .box
+            {
+                flex-direction: column;
+                width: 100%;
+                /* margin-top: 80px; */
+                min-height: 280px;
+            }
+            .b1
+            {
+                width: 100%;
+                min-height: 400px;
+               margin-top: 40px;
+            }
+            .b2
+            {
+                width: 100%;
+               /* min-height: 280px; */
+            }
+        }
+
+        @media only screen and (max-width:364px){
+             
+             .box
+             {
+                 flex-direction: column;
+                 width: 100%;
+                 /* margin-top: 80px; */
+                 min-height: 280px;
+             }
+             .b1
+             {
+                 width: 100%;
+                 min-height: 400px;
+                 margin-top: 60px;
+             }
+             .b2
+             {
+                 width: 100%;
+                /* min-height: 280px; */
+             }
+         }
+         @media only screen and (max-width:344px){
+             
+             .box
+             {
+                 flex-direction: column;
+                 width: 100%;
+                 /* margin-top: 80px; */
+                 min-height: 280px;
+             }
+             .b1
+             {
+                 width: 100%;
+                 min-height: 400px;
+                 margin-top: 150px;
+             }
+             .b2
+             {
+                 width: 100%;
+                /* min-height: 280px; */
+             }
+         }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="b1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus, maxime atque explicabo rem qui dolores nobis illo! Labore quo laborum, fuga maxime fugiat illo doloremque eum rem nostrum culpa modi non tempora, sed ab facilis deserunt corporis reiciendis soluta animi dolore error repellendus quia necessitatibus? Dignissimos quae minus voluptatem dolor id, fugiat nulla eaque! Ipsum hic esse, maxime cum temporibus sed reprehenderit natus, ut officiis, libero nam obcaecati rem quibusdam inventore quaerat laudantium repellendus ea at ipsa impedit exercitationem fugiat aspernatur et earum! Dolores fugiat veniam reprehenderit suscipit ipsam dignissimos obcaecati eveniet natus facere, explicabo aut nostrum omnis molestiae?</p>
+        </div>
+
+        <div class="b2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus, maxime atque explicabo rem qui dolores nobis illo! Labore quo laborum, fuga maxime fugiat illo doloremque eum rem nostrum culpa modi non tempora, sed ab facilis deserunt corporis reiciendis soluta animi dolore error repellendus quia necessitatibus? Dignissimos quae minus voluptatem dolor id, fugiat nulla eaque! Ipsum hic esse, maxime cum temporibus sed reprehenderit natus, ut officiis, libero nam obcaecati rem quibusdam inventore quaerat laudantium repellendus ea at ipsa impedit exercitationem fugiat aspernatur et earum! Dolores fugiat veniam reprehenderit suscipit ipsam dignissimos obcaecati eveniet natus facere, explicabo aut nostrum omnis molestiae?</p>
+        </div>
+    </div>
+</body>
+</html>

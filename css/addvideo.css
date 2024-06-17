@@ -58,8 +58,8 @@ nav ul li a:hover
     font-weight: bold;
 }
 .content h1:hover{
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color:deeppink;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:white;
     -webkit-text-fill-color: transparent;
 }
 .content a{
