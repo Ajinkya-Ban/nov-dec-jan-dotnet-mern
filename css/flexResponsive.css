@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 body{
     display: flex;
@@ -29,7 +31,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-basis: 50%;
-    background-color: royalblue;
+    background-color: #1A3F4F;
     padding: 15px;
 }
 .logo h1
@@ -41,7 +43,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-basis: 50%;
-   background-color: royalblue;
+   background-color: #1A3F4F;
 }
 .menu ul{
     
@@ -57,16 +59,123 @@ body{
     color: white;
     text-decoration: none;
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
     text-transform: uppercase;
 }
+.slider
+{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+.slider img
+{
+    width: 100%;
+    height: 100%;
+}
+.row
+{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+
+}
+.row .col
+{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 33%;
+    position: relative;
+
+}
+.col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.col:nth-child(2)
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.col .offer h1{
+    position: absolute;
+    color: white;
+    left: 5px;
+    bottom: 0;
+}
+
+.col .order a{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    display: inline-block;
+    padding: 5px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.con{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+.con .prod-info
+{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.prod-info .prod-name h2{
+    padding: 10px;
+}
+
+.prod-info .info p{
+    padding: 5px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.prod-info .info{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.prod-info .info .img-con
+{
+    width: 40%;
+}
+.prod-info .info  img
+{
+    width: 100%;
+    height: 80%;
+    padding-top: 10px;
+}
 
 
-@media only screen and (max-width:992px) 
+
+
+@media only screen and (max-width:1211px) 
 {
         .main-header-div{
             flex-direction: column;
+        }
+        .container
+        {
+            width: 100%;
         }
 }
 @media only screen and (max-width:607px) 
@@ -95,7 +204,34 @@ body{
         }
         #job_hide
         {
-            z-index: -1;
-        
+            display: none;
+        }
+        .slider
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .row
+        {
+            flex-direction: column;
+        }
+        .col 
+        {
+            margin-top: 5px;
+        }
+        .col:nth-child(2)
+        {
+         margin-left: 0px;
+         margin-right: 0px;
+        }
+        .prod-info .info{
+            flex-direction: column;
+        }
+        .prod-info .info p{
+            width: 100%;
+        }
+        .prod-info .info .img-con
+        {
+            width: 100%;
         }
 }
