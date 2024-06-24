@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 80%;
+            min-height: 100px;
+            margin: auto;
+            border: 1px solid #000;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 100px 60px 300px 200px 100px;
+            grid-template-areas: "header header header"
+                                "menu menu menu"
+                                "slider slider slider"
+                                "sidebar box1 box2"
+                                "footer footer footer";
+            grid-gap: 0.2rem;
+        }
+        .header
+        {
+            background-color: gray;
+            color: white;
+            grid-area: header;
+        }
+        .menu
+        {
+            background-color: blueviolet;
+            color: white;
+            grid-area: menu;
+        }
+        .slider
+        {
+            background-color: gray;
+            color: white;
+            grid-area: slider;
+        }
+        .sidebar
+        {
+            background-color: blueviolet;
+            color: white;
+            grid-area: sidebar;
+        }
+        .box1
+        {
+            background-color: lightgreen;
+            color: black;
+            grid-area: box1;
+        }
+        .box2
+        {
+            background-color: lightpink;
+            color: black;
+            grid-area: box2;
+        }
+        .footer
+        {
+            background-color: gray;
+            color: white;
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width:768px) 
+        {
+            .container{
+                width: 100%;
+                grid-template-columns: 1fr;
+                grid-template-rows: 60px 60px 200px 100px 100px 100px 60px;
+                grid-template-areas: "header"
+                                        "menu"
+                                        "slider"
+                                        "sidebar"
+                                        "box1"
+                                        "box2"
+                                        "footer";
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="slider">Slider</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
