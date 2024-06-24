@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <style>
+        *
+        {
+            padding:0;
+            margin:0;
+        box-sizing: border-box;        
+    }
+    body, html{
+        width: 100%;
+        height: 100vh;
+    }
+    nav{
+        width: 100%;
+        height: 80px;
+        background-color: lightskyblue;
+    }
+    label.logo{
+        font-size: 35px;
+        color: #fff;
+        margin: 0 60px;
+        line-height: 80px;
+    }
+    nav ul{
+        float: right;
+        list-style-type: none;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 8px 10px;
+        text-transform: uppercase;
+    }
+    .checkbtn
+    {
+        float: right;
+        line-height: 80px;
+        color: white;
+        font-size: 30px;
+        display: none;
+    }
+    #check
+    {
+        display: none;
+    }
+    #check:checked ~ ul
+    {
+        left: 0;
+    }
+    @media only screen and (max-width:858px) 
+    {
+        nav{
+            width: 100%;
+        }
+        .checkbtn
+        {
+            display: block;
+        }
+        nav ul{
+            width: 100%;
+            height: 100vh;
+            background-color: lightslategray;
+            color: white;
+            position: fixed;
+            top:80px;
+            left: -100%;
+            transition: all 0.3s;
+        }
+        nav ul li{
+            display: block;
+            text-align: center;
+            line-height: 85px;
+            margin: 15px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check" name="" value="">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <label class="logo">Compnay Name</label>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+
+    </nav>
+</body>
+</html>
