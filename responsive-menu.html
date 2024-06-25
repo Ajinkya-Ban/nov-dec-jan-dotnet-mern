@@ -51,6 +51,7 @@
         color: white;
         font-size: 30px;
         display: none;
+        margin-right: 30px;
     }
     #check
     {
@@ -58,7 +59,7 @@
     }
     #check:checked ~ ul
     {
-        left: 0;
+        top:80px;
     }
     @media only screen and (max-width:858px) 
     {
@@ -75,9 +76,10 @@
             background-color: lightslategray;
             color: white;
             position: fixed;
-            top:80px;
-            left: -100%;
+            top:-100%;
+            left: 0;
             transition: all 0.3s;
+            z-index: -1;
         }
         nav ul li{
             display: block;
