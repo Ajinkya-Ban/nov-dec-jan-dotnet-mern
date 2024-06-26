@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.que h2{
+    font-family: "Ubuntu", sans-serif;
+    color: rebeccapurple;
+}
+.ans p{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    background-color: lightgreen;
+}
+.menu
+{
+    /* display: none; */
+    visibility: hidden;
+}
+img
+{
+    display: none;
+}
+.box
+{
+    margin-top: 70px;
+}
